@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style2.css">
-    <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js" defer></script>
     <title>CSE site</title>
 </head>
 <body>
@@ -13,20 +13,38 @@
         <div class="logo_content">
             <div class="logo">
                 
-                <box-icon name='laptop' ></box-icon>
+                <box-icon color="white" size="lg"  name='laptop'  ></box-icon>
                 <div class="logo_name">CSE Windows</div>
             </div>
-            <box-icon name='menu' id ="btn"></box-icon>
+            <box-icon color="white" size="sm" name='menu' id ="btn"></box-icon>
         </div>
         <ul class="nav_list">
-            <li><box-icon name='search-alt-2' ></box-icon><input type="text" name="value" placeholder="Search..."></li>
-            <li><a href=""><box-icon name='home'></box-icon><span class="links_name">Home</span></a></li>
-            <li><a href=""><box-icon name='school' type='solid' ></box-icon><span class="links_name">Academics</span></a></li>
-            <li><a href=""><box-icon name='calendar-event' ></box-icon><span class="links_name">Events</span></a></li>
-            <li><a href=""><box-icon name='book-bookmark'></box-icon><span class="links_name">Resourses</span></a></li>
-            <li><a href=""><box-icon name='body'></box-icon><span class="links_name">About-us</span></a></li>
-            <li><a href=""><box-icon name='grid-alt'></box-icon><span class="links_name">Dashboard</span></a></li>
+            <li><input type="text" name="value" placeholder="Search..."></li>
+            <li><a href=""><box-icon color="white" name='home'></box-icon><span class="links_name">Home</span></a></li>
+            <li><a href=""><box-icon color="white" name='grid-alt'></box-icon><span class="links_name">Dashboard</span></a></li>
+            <li><a href=""><box-icon color="white" name='school' type='solid' ></box-icon><span class="links_name">Academics</span></a></li>
+            <li><a href=""><box-icon color="white" name='calendar-event' ></box-icon><span class="links_name">Events</span></a></li>
+            <li><a href=""><box-icon color="white" name='book-bookmark'></box-icon><span class="links_name">Resourses</span></a></li>
+            <li><a href=""><box-icon color="white" name='body'></box-icon><span class="links_name">About-us</span></a></li>
+        </ul>
+
+        <ul class="user_info">
+            <!-- this will be available when the use is loged in  -->
+            <li><a href=""><box-icon type='solid' size="md" color="white" name='user-check'></box-icon>User Info</a></li>
+            <article>Name : Username</article>
+            <article>Profession : Student</article>
+            <article>College :National Institute of Technology</article>
         </ul>
     </div>
+
+    <div class="log_in">
+        <li><a href=""><box-icon size="md" name='user-circle'></box-icon></a></li>
+        
+        <button class="log_btn">
+           <strong>Log in</strong> 
+        </button>
+         
+    </div>
+
 </body>
 </html>
