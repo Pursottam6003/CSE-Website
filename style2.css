@@ -2,6 +2,7 @@
     margin:0;
     padding:0;
     font-family: 'Courier New', Courier, monospace;
+   
 }
 
 
@@ -11,6 +12,10 @@ body
     min-height: 100vh;
     width: 100%;
     overflow: hidden;
+    display: inline-block;
+    background-image: url('./images/header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .sidebar
 {   
@@ -18,7 +23,7 @@ body
     top:0;
     left:0;
     height: 100%;
-    width:240px;
+    width:16rem;
     background:#11101d;
     padding:6px 14px;
 }
@@ -112,17 +117,17 @@ ul li a
     border-radius: 0.7rem;
 }
 
-.user_info  
+.user_info   
 {
     color:#ffff;
     display: block;
 }
 
 .log_in
-{
-    margin-left:95%;
+{   
+    float:right;
+    display: inline-block;
     margin-top:1rem;
-
 }
 
 .log_in .log_btn
@@ -144,4 +149,19 @@ ul li a
 .user_info article 
 {
     font-size: small;
+}
+
+
+.header
+{   margin-top: 2rem;
+    text-align: center;
+    color:white;
+    font-weight: 700;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+article
+{
+    font-size: larger;
 }

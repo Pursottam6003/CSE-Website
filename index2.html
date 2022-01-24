@@ -6,20 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style2.css">
     <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js" defer></script>
+    <script src="./index.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <title>CSE site</title>
 </head>
-<body>
-    <div class="sidebar">
+<body onload="checkOnLoad()">
+    <div class="sidebar" id="bar">
         <div class="logo_content">
             <div class="logo">
                 
-                <box-icon color="white" size="lg"  name='laptop'  ></box-icon>
-                <div class="logo_name">CSE Windows</div>
+                <box-icon color="white" size="md" name='laptop'  ></box-icon>
+                <div class="logo_name" id="logoName">CSE Windows</div>
             </div>
-            <box-icon color="white" size="sm" name='menu' id ="btn"></box-icon>
+            <box-icon color="white" name='menu' id ="btn"></box-icon>
         </div>
         <ul class="nav_list">
-            <li><input type="text" name="value" placeholder="Search..."></li>
+            <li><input type="text" id="search" name="value" placeholder="Search..."></li>
             <li><a href=""><box-icon color="white" name='home'></box-icon><span class="links_name">Home</span></a></li>
             <li><a href=""><box-icon color="white" name='grid-alt'></box-icon><span class="links_name">Dashboard</span></a></li>
             <li><a href=""><box-icon color="white" name='school' type='solid' ></box-icon><span class="links_name">Academics</span></a></li>
@@ -30,21 +32,35 @@
 
         <ul class="user_info">
             <!-- this will be available when the use is loged in  -->
-            <li><a href=""><box-icon type='solid' size="md" color="white" name='user-check'></box-icon>User Info</a></li>
-            <article>Name : Username</article>
-            <article>Profession : Student</article>
-            <article>College :National Institute of Technology</article>
+            
+            <li><a href=""><box-icon type='solid' color="white" name='user-check'></box-icon><span>User Info</span></a></li>
+            <div id="info">
+                <article>Name : Username</article>
+                <article>Profession : Student</article>
+                <article>College :National Institute of Technology</article>
+            </div>
+
         </ul>
     </div>
 
     <div class="log_in">
-        <li><a href=""><box-icon size="md" name='user-circle'></box-icon></a></li>
+        <li><a href=""><box-icon color="white" size="md" name='user-circle'></box-icon></a></li>
         
         <button class="log_btn">
            <strong>Log in</strong> 
         </button>
-         
+    </div>
+
+
+    <div class="header">
+       <article id="quotes"></article>
+       <p id="author"><strong></strong></p>
     </div>
 
 </body>
+
+
+<footer>
+    
+</footer>
 </html>
